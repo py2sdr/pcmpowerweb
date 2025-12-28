@@ -1,4 +1,5 @@
-<img width="890" height="908" alt="image" src="https://github.com/user-attachments/assets/bf4726d3-03c8-4a96-8768-337df4f88eb6" />
+<img width="400" height="408" alt="image" src="https://github.com/user-attachments/assets/4aac2720-e3dd-43b7-aa91-82fae8db1749" />
+
 
 # PCM Audio Power Meter
 **A numerical power meter tool for PCM audio.**
