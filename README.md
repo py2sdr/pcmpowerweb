@@ -53,7 +53,7 @@ Install the necessary dependencies using pip:
 pip install numpy pyaudio
 ```
 
-### Usage
+## Usage
 #### 1. Identifying the Correct Audio Device
 PyAudio interacts with your system's hardware abstraction layer. Because device indices can change when you plug or unplug USB devices, it is best to verify the index every time you change your hardware setup.
 
