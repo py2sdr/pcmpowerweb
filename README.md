@@ -72,6 +72,7 @@ Hardware Users: Look for "USB Audio Device" or "Built-in Microphone."
 
 #### 2. Accessing the Web Interface
 The script hosts a local "Micro-Server." Once started, the meter can be viewed on any device connected to the same local network (Wi-Fi or LAN).
+
 Local Access (Same Computer) Simply open your browser and type: http://localhost:8080
 
 Remote Access (Smartphone/Tablet at the Antenna) To monitor the signal while physically adjusting your dish, you need your computer's local IP address:
