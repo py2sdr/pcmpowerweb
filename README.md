@@ -9,7 +9,7 @@
 ## Overview
 The **PCM Audio Power Meter** is a lightweight, high-performance Python tool designed for radio amateurs and RF enthusiasts. It transforms your computer's audio input—from an SDR, virtual audio cable, or receiver—into a high-resolution digital bolometer. 
 
-Designed specifically for demanding tasks like **QO-100 dish alignment**, it focuses on numerical stability and fast response times.
+Designed for tasks like **QO-100 dish alignment**, using the CW, mid, or multimedia beacons.
 
 ## Key Features
 * **Numerical Focus:** Large, high-visibility **Blue** primary display for precision delta tracking.
