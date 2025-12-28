@@ -77,7 +77,7 @@ Local Access (Same Computer): Simply open your browser and type: http://localhos
 
 Remote Access (Smartphone/Tablet at the Antenna): To monitor the signal while physically adjusting your dish, you need your computer's local IP address:
 
-Find your IP: Run ipconfig (Windows) or ip addr (Linux/Mac).
+Find your IP: Run ipconfig (Windows) or ip addr (Linux).
 
 On your phone's browser, enter the IP followed by the port (e.g., http://192.168.1.50:8080).
 
