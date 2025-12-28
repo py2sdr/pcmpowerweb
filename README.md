@@ -34,19 +34,19 @@ Where:
 * $s_i^2$ represents the instantaneous power of that sample.
 * $\frac{1}{N} \sum s_i^2$ is the average power (Mean Square) over the window $N$.
 
-### Implementation Strategy
+## Implementation Strategy
 * **Chunk Integration ($N=8192$):** At a sample rate of 48 kHz, each numerical update represents an integration of ~170ms of audio. This window is specifically chosen to be long enough to provide numerical stability (averaging out atmospheric flicker) but short enough to provide "instant" feedback during physical dish movement.
 * **Vectorized Processing:** The script uses **NumPy's `np.mean(arr**2)`** logic.
 * **Logarithmic Scaling:** The results are mapped to a decibel (dB) scale. This allows the user to see tiny linear changes (0.1 dB) in signal-to-noise ratio that would be invisible on a standard linear scale.
 * **Numerical Clamping:** To prevent mathematical domain errors (log of zero) during periods of absolute silence, the algorithm applies a floor clamp, ensuring the display remains at a stable 0.0 dB.
 
-### Dependencies
+## Dependencies
 This project requires **Python 3.7+** and the following libraries:
 
 * **NumPy:** For high-speed vectorized mathematical operations.
 * **PyAudio:** For accessing the system's real-time audio stream.
 
-### Installation
+## Installation
 Install the necessary dependencies using pip:
 
 ```
