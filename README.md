@@ -6,7 +6,7 @@
 ---
 
 ## Overview
-The **PCM Audio Power Meter** is a lightweight, high-performance Python tool designed for radio amateurs and RF enthusiasts. It transforms your computer's audio input—from an SDR, virtual audio cable, or receiver—into a high-resolution digital bolometer. 
+The **PCM Audio Power Meter** is a lightweight, high-performance Python tool designed for radio amateurs and RF enthusiasts. It transforms your computer's audio input—from an SDR, virtual audio cable, or receiver—into a high-resolution audio power meter. 
 
 Designed for tasks like **QO-100 dish alignment**, using the CW, mid, or multimedia beacons.
 
@@ -18,12 +18,7 @@ Designed for tasks like **QO-100 dish alignment**, using the CW, mid, or multime
 * **Ergonomic Controls:** Mobile-optimized layout with "Reset Stats" and "Toggle Theme" buttons placed for easy thumb access.
 * **Network-Ready:** Runs a local web server (Port 8080) allowing for remote monitoring on a smartphone or tablet at the antenna.
 
-## Technical Theory
-
-### The Digital Bolometer Principle
-Unlike standard VU meters or "loudness" indicators that use arbitrary weighting or RC-style smoothing constants, this meter operates as a **Digital Bolometer**. It treats the incoming PCM stream as a series of voltage samples and calculates the true energy content of the waveform by computing the **Mean Square Power**.
-
-### Mathematical Foundation
+## Mathematical Foundation
 For a discrete buffer of $N$ samples, the power is calculated as:
 
 $$P_{dB} = 10 \cdot \log_{10} \left( \frac{1}{N} \sum_{i=1}^{N} s_i^2 \right)$$
@@ -59,15 +54,13 @@ Tune the CW ou multimedia beacon using USB demodulation and place the signal in 
 
 Select the virtual audio device.
 
-
-
 #### 2. Identifying the Correct Audio Device
 PyAudio interacts with your system's hardware abstraction layer. Because device indices can change when you plug or unplug USB devices, it is best to verify the index every time you change your hardware setup.
 
 Run the discovery command:
 
 ```
-python pcm_power_meter.py
+python pcmpowerweb.py
 ```
 
 What to look for:
