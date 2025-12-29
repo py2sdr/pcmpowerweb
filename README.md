@@ -53,7 +53,15 @@ pip install numpy pyaudio
 ```
 
 ## Usage
-#### 1. Identifying the Correct Audio Device
+
+#### 1. Tuning the CW or multimedia beacon
+Tune the CW ou multimedia beacon using USB demodulation and place the signal in the middle of the audio passband. Turn off AGC during the measurements.
+
+Select the virtual audio device.
+
+
+
+#### 2. Identifying the Correct Audio Device
 PyAudio interacts with your system's hardware abstraction layer. Because device indices can change when you plug or unplug USB devices, it is best to verify the index every time you change your hardware setup.
 
 Run the discovery command:
